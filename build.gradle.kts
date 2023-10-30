@@ -13,24 +13,20 @@ dependencies {
     // Lombook para generar código, poner  esto para que funcione
     implementation("org.projectlombok:lombok:1.18.28")
     testImplementation("org.projectlombok:lombok:1.18.28")
-    testImplementation("org.projectlombok:lombok:1.18.28")
-
-    // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
-    implementation("com.zaxxer:HikariCP:2.3.2")
-
-    //h2
-    implementation("com.h2database:h2:2.2.224")
+    annotationProcessor("org.projectlombok:lombok:1.18.28")
 
     //ibaitis
     implementation("org.mybatis:mybatis:3.5.13")
 
     //project reactor
-    implementation("io.projectreactor:reactor-core:3.4.10")
+    implementation("io.projectreactor:reactor-core:3.5.10")
 
     //R2DBC
     implementation("io.r2dbc:r2dbc-h2:0.8.4.RELEASE")
     implementation("io.r2dbc:r2dbc-pool:0.8.5.RELEASE")
-    implementation("org.projectreactor:reactor-core:3.4.8")
+
+    // Gson
+    implementation("com.google.code.gson:gson:2.10.1")
 
     // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
     implementation("ch.qos.logback:logback-classic:1.4.11")

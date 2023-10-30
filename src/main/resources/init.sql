@@ -1,6 +1,5 @@
-CREATE TABLE FUNKOS
-(
-    ID                INTEGER PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE funkos (
+    ID                INTEGER AUTO_INCREMENT PRIMARY KEY,
     cod               VARCHAR(36) NOT NULL,
     MyId              NUMBER,
     nombre            VARCHAR,
