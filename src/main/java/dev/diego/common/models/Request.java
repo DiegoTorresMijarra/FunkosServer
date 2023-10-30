@@ -1,4 +1,7 @@
 package dev.diego.common.models;
 
-public class Request {
+import dev.diego.common.enunms.TipoRequest;
+
+public record Request <T>(TipoRequest type, T valor){
+
 }

@@ -28,6 +28,12 @@ dependencies {
     // Gson
     implementation("com.google.code.gson:gson:2.10.1")
 
+    // JWT
+    implementation("com.auth0:java-jwt:4.2.1")
+
+    // BCcrypt
+    implementation("org.mindrot:jbcrypt:0.4")
+
     // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
     implementation("ch.qos.logback:logback-classic:1.4.11")
 

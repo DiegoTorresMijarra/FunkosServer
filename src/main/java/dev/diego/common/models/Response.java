@@ -1,4 +1,6 @@
 package dev.diego.common.models;
 
-public class Response {
+import dev.diego.common.enunms.ResponseEstatus;
+
+public record Response<T> (ResponseEstatus status, T contenido) {
 }

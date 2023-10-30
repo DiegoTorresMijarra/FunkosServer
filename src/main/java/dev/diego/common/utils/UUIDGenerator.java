@@ -1,4 +1,4 @@
-package dev.diego.common.utilities;
+package dev.diego.common.utils;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,7 +1,7 @@
 package dev.diego.server;
 
 import dev.diego.common.models.Funkos;
-import dev.diego.common.utilities.ProcesadorCsv;
+import dev.diego.common.utils.ProcesadorCsv;
 import dev.diego.server.repositories.funkos.CrudFunkosRepositoryImpl;
 import dev.diego.server.services.database.DataBaseManager;
 import lombok.extern.slf4j.Slf4j;

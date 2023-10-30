@@ -2,13 +2,11 @@ package dev.diego.server.repositories.funkos;
 
 import dev.diego.common.enunms.Modelo;
 import dev.diego.common.models.Funkos;
-import dev.diego.common.utilities.IdGenerator;
-import dev.diego.common.utilities.UUIDGenerator;
+import dev.diego.common.utils.MyIdGenerator;
+import dev.diego.common.utils.UUIDGenerator;
 import dev.diego.server.services.database.DataBaseManager;
 import io.r2dbc.pool.ConnectionPool;
 import io.r2dbc.spi.Connection;
-import io.r2dbc.spi.ConnectionFactory;
-import io.r2dbc.spi.Result;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -82,7 +80,7 @@ public class CrudFunkosRepositoryImpl implements CrudFunkosRepository {
                 connectionFactory.create(),
                 connection -> Mono.from(connection.createStatement(sql)
                                 .bind(0, entity.getCod())
-                                .bind(1, IdGenerator.getAndIncrement())
+                                .bind(1, MyIdGenerator.getAndIncrement())
                                 .bind(2, entity.getNombre())
                                 .bind(3, entity.getModelo().toString())
                                 .bind(4, entity.getPrecio())
